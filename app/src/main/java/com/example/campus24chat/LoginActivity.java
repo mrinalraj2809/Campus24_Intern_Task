@@ -34,6 +34,7 @@ public class LoginActivity extends AppCompatActivity {
         if(currentUser != null)
         {
             startActivity(new Intent(this,HomeActivity.class));
+            finish();
         }
 
     }
@@ -86,6 +87,7 @@ public class LoginActivity extends AppCompatActivity {
                                         // Sign in success, update UI with the signed-in user's information
                                         loadingBar.dismiss();
                                         startActivity(new Intent(getApplicationContext(),HomeActivity.class));
+                                        finish();
                                         //updateUI(user);
                                     } else {
                                         loadingBar.dismiss();

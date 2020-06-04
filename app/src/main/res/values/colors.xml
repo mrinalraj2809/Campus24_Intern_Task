@@ -3,4 +3,9 @@
     <color name="colorPrimary">#008577</color>
     <color name="colorPrimaryDark">#00574B</color>
     <color name="colorAccent">#D81B60</color>
+    <color name="Wheat">#34eb8c</color>
+    <color name="white">#fff</color>
+    <color name="green">#0f9b0f</color>
+    <color name="Black">#000</color>
+    <color name="light_grey">#ede4ec</color>
 </resources>

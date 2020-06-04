@@ -7,7 +7,27 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical">
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="10dp"
+            app:cardCornerRadius="3dp">
 
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/signinHeadline"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:hint="Headline:"
+                    android:inputType="textPersonName" />
+            </com.google.android.material.textfield.TextInputLayout>
+        </androidx.cardview.widget.CardView>
 
         <androidx.cardview.widget.CardView
             android:layout_width="match_parent"
@@ -23,10 +43,31 @@
                 android:layout_height="match_parent">
 
                 <com.google.android.material.textfield.TextInputEditText
-                    android:id="@+id/signinnameStudent"
+                    android:id="@+id/signinFirstName"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:hint="Enter Your Name:"
+                    android:hint="First Name:"
+                    android:inputType="textPersonName" />
+            </com.google.android.material.textfield.TextInputLayout>
+        </androidx.cardview.widget.CardView>
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="10dp"
+            app:cardCornerRadius="3dp">
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/signinLastName"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:hint="Last Name:"
                     android:inputType="textPersonName" />
             </com.google.android.material.textfield.TextInputLayout>
 
@@ -48,11 +89,11 @@
                 android:layout_height="match_parent">
 
                 <com.google.android.material.textfield.TextInputEditText
-                    android:id="@+id/signinusnStudent"
+                    android:id="@+id/signinUsername"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:hint="Enter Your USN:"
-                    android:inputType="textCapCharacters" />
+                    android:hint="Username:"
+                    android:inputType="textPersonName" />
             </com.google.android.material.textfield.TextInputLayout>
         </androidx.cardview.widget.CardView>
 
@@ -70,14 +111,13 @@
                 android:layout_height="match_parent">
 
                 <com.google.android.material.textfield.TextInputEditText
-                    android:id="@+id/signinpnoStudent"
+                    android:id="@+id/signinHobby1"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:hint="Enter Your Phone_No.:"
-                    android:inputType="number" />
+                    android:hint="Hobby 1:"
+                    android:inputType="textPersonName" />
             </com.google.android.material.textfield.TextInputLayout>
         </androidx.cardview.widget.CardView>
-
         <androidx.cardview.widget.CardView
             android:layout_width="match_parent"
             android:layout_height="70dp"
@@ -87,27 +127,18 @@
             android:layout_marginBottom="10dp"
             app:cardCornerRadius="3dp">
 
-            <!--        <com.google.android.material.textfield.TextInputLayout-->
-            <!--            android:layout_width="match_parent"-->
-            <!--            android:layout_height="match_parent">-->
-            <AutoCompleteTextView
-                android:id="@+id/signinsemStudent"
-                android:layout_width="fill_parent"
-                android:layout_height="wrap_content"
-                android:hint="Enter Your Semester:"
-                android:inputType="numberDecimal">
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
 
-            </AutoCompleteTextView>
-
-            <!--            <com.google.android.material.textfield.TextInputEditText-->
-            <!--                android:id="@+id/signinsemStudent"-->
-            <!--                android:layout_width="match_parent"-->
-            <!--                android:layout_height="match_parent"-->
-            <!--                android:hint="Enter Your Semester:"-->
-            <!--                android:inputType="numberDecimal"/>-->
-            <!--        </com.google.android.material.textfield.TextInputLayout>-->
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/signinHobby2"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:hint="Hobby 2:"
+                    android:inputType="textPersonName" />
+            </com.google.android.material.textfield.TextInputLayout>
         </androidx.cardview.widget.CardView>
-
         <androidx.cardview.widget.CardView
             android:layout_width="match_parent"
             android:layout_height="70dp"
@@ -117,19 +148,18 @@
             android:layout_marginBottom="10dp"
             app:cardCornerRadius="3dp">
 
-            <AutoCompleteTextView
-                android:id="@+id/signinSectionStudent"
-                android:layout_width="fill_parent"
-                android:layout_height="wrap_content"
-                android:hint="Enter Your Section:"
-                android:inputType="textCapCharacters">
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
 
-            </AutoCompleteTextView>
-
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/signinHobby3"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:hint="Hobby 3:"
+                    android:inputType="textPersonName" />
+            </com.google.android.material.textfield.TextInputLayout>
         </androidx.cardview.widget.CardView>
-
-
-
         <androidx.cardview.widget.CardView
             android:layout_width="match_parent"
             android:layout_height="70dp"
@@ -139,18 +169,18 @@
             android:layout_marginBottom="10dp"
             app:cardCornerRadius="3dp">
 
-            <AutoCompleteTextView
-                android:id="@+id/signinbranchStudent"
-                android:layout_width="fill_parent"
-                android:layout_height="wrap_content"
-                android:hint="Enter Your Branch:"
-                android:inputType="textCapCharacters">
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
 
-            </AutoCompleteTextView>
-
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/signinHobby1Color"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:hint="Hobby 1 Color:"
+                    android:inputType="textPersonName" />
+            </com.google.android.material.textfield.TextInputLayout>
         </androidx.cardview.widget.CardView>
-
-
 
         <androidx.cardview.widget.CardView
             android:layout_width="match_parent"
@@ -166,16 +196,97 @@
                 android:layout_height="match_parent">
 
                 <com.google.android.material.textfield.TextInputEditText
-                    android:id="@+id/signinemailStudent"
+                    android:id="@+id/signinHobby2Color"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:hint="Enter Your Email ID:"
+                    android:hint="Hobby 2 Color:"
+                    android:inputType="textPersonName" />
+            </com.google.android.material.textfield.TextInputLayout>
+        </androidx.cardview.widget.CardView>
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="10dp"
+            app:cardCornerRadius="3dp">
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/signinHobby3Color"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:hint="Hobby 3 Color:"
+                    android:inputType="textPersonName" />
+            </com.google.android.material.textfield.TextInputLayout>
+        </androidx.cardview.widget.CardView>
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="10dp"
+            app:cardCornerRadius="3dp">
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/signinInstituteName"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:hint="Institute Name:"
+                    android:inputType="textPersonName" />
+            </com.google.android.material.textfield.TextInputLayout>
+        </androidx.cardview.widget.CardView>
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="10dp"
+            app:cardCornerRadius="3dp">
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/signinAbout"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:hint="About:"
+                    android:inputType="textPersonName" />
+            </com.google.android.material.textfield.TextInputLayout>
+        </androidx.cardview.widget.CardView>
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="10dp"
+            app:cardCornerRadius="3dp">
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/signinEmail"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:hint="Email:"
                     android:inputType="textEmailAddress" />
             </com.google.android.material.textfield.TextInputLayout>
         </androidx.cardview.widget.CardView>
-
-
-
         <androidx.cardview.widget.CardView
             android:layout_width="match_parent"
             android:layout_height="70dp"
@@ -190,37 +301,13 @@
                 android:layout_height="match_parent">
 
                 <com.google.android.material.textfield.TextInputEditText
-                    android:id="@+id/signinpwdStudent"
+                    android:id="@+id/signinPassword"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:hint="Enter Your Password:"
-                    android:inputType="textPassword" />
-
-            </com.google.android.material.textfield.TextInputLayout>
-        </androidx.cardview.widget.CardView>
-
-        <androidx.cardview.widget.CardView
-            android:layout_width="match_parent"
-            android:layout_height="70dp"
-            android:layout_marginLeft="10dp"
-            android:layout_marginTop="10dp"
-            android:layout_marginRight="10dp"
-            android:layout_marginBottom="10dp"
-            app:cardCornerRadius="3dp">
-
-            <com.google.android.material.textfield.TextInputLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent">
-
-                <com.google.android.material.textfield.TextInputEditText
-                    android:id="@+id/signinpwdcnfrmStudent"
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:hint="Confirm Password:"
+                    android:hint="Password:"
                     android:inputType="textPassword" />
             </com.google.android.material.textfield.TextInputLayout>
         </androidx.cardview.widget.CardView>
-
         <Button
             android:id="@+id/signinbtnStudent"
             android:layout_width="300dp"
